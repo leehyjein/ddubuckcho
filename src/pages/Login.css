@@ -1,0 +1,30 @@
+.loginTitle {
+    text-align: center;
+}
+
+.loginContainer {
+    width: 60%;
+    margin: 70px auto;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.loginIdInput {
+    display: block;
+    margin: 10px auto;
+    border: 1px solid blue;
+}
+
+.loginPasswordInput {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid green;
+}
+
+.loginBtn {
+    width: 150px;
+    padding: 5px;
+    margin: 20px auto;
+    border: 2px solid brown;
+    border-radius: 5px;
+}
