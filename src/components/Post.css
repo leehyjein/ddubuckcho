@@ -1,0 +1,35 @@
+.postCard {
+    width: 20%;
+    margin: 20px auto;
+    border: 1px solid red;
+}
+
+.postImage {
+    /* position: relative; */
+    /* padding-top: 75%; */
+    overflow: hidden;
+}
+
+.postImage img {
+    width: 100%;
+    height: 100%;   
+    object-fit: cover;
+}
+
+.postFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postTitle {
+    width: 30%;
+}
+
+.dislikeBtn {
+    background-color: "yellow";
+}
+
+.likeBtn {
+    background-color: red;
+}
