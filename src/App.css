@@ -1,38 +1,131 @@
-.App {
+.Header{
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 20px;
+  border: 2px black solid ;
+}
+.writeButton{
+  width: 50px;
+  height: 50px;
+  background-color: #212121;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-size: 36px;
+  font-weight: 800;
+  position: fixed;
+  bottom: 50px;
+  right: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+.writeImageInner{
+  position: relative;
+    /* padding-top: 20%; */
+    overflow: hidden;
+    background-size: cover;
+
+}
+.writeImageOutter{
+  width: 50%;
+    min-width: 200px;
+}
+.writeImage{
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+}
+.contents{
+  display: flex;
+}
+.writeContent{
+  height: 100%;
+}
+.writetrip{
+  height: 200px;
+  /* border: white; */
+}
+.writePage{
+   padding: 2% 10%;
+  /* display: flex; */
+   /* align-items: center;
+   justify-content: space-between;  */
+}
+
+/*로그인*/
+.loginTitle {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loginContainer {
+  width: 60%;
+  margin: 70px auto;
+  text-align: center;
+  border: 2px solid red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loginIdInput {
+  display: block;
+  margin: 10px auto;
+  border: 1px solid blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loginPasswordInput {
+  display: block;
+  margin: 10px auto;
+  border: 2px solid green;
+}
+
+.loginBtn {
+  width: 150px;
+  padding: 5px;
+  margin: 20px auto;
+  border: 2px solid brown;
+  border-radius: 5px;
+}
+/*메인페이지*/
+.postCard {
+  width: 20%;
+  margin: 20px auto;
+  border: 1px solid red;
+}
+
+.postImage {
+  /* position: relative; */
+  /* padding-top: 75%; */
+  overflow: hidden;
+}
+
+.postImage img {
+  width: 100%;
+  height: 100%;   
+  object-fit: cover;
+}
+
+.postFooter {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.postTitle {
+  width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dislikeBtn {
+  background-color: "yellow";
+}
+
+.likeBtn {
+  background-color: red;
+}
+
+/* 시간리스트*/
+.postContainer {
+  border: 2px solid green;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
