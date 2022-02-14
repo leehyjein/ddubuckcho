@@ -6,18 +6,18 @@ import "../pages/Signup.css";
 
 
 const Signup = (props) => {
-  const [id, setId] = React.useState("");
-
+ 
   const [values, setValues] = useState({
     loginId: "",
     password: "",
     passwordConfirm: "",
     name: "",
-    specificCharacter: "/[ {}[]/?.,;:|)*~`!^-_+┼<>@#$%&'\"\\(=]/gi",
   });
 
   const [submitted, setSubmitted] = useState(false);
   const [valid, setValid] = useState(false);
+  
+  const specialLetter = values.loginId.search(/[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi);
 
   const handleId = (e) => {
     setValues({ ...values, loginId: e.target.value });
@@ -35,13 +35,18 @@ const Signup = (props) => {
     setValues({ ...values, name: e.target.value });
   };
 
+  const handleSpecialLetter = (e) => {
+    setValues({...values, specialLetter: e.target.value});
+  }
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
       values.loginId &&
       values.password &&
       values.passwordConfirm &&
-      values.name
+      values.name 
     ) {
       setValid(true);
     }
@@ -50,7 +55,7 @@ const Signup = (props) => {
       values.loginId === "" ||
       values.password === "" ||
       values.passwordConfirm === "" ||
-      values.name === ""
+      values.name === "" 
     ) {
       window.alert("아이디, 패스워드, 닉네임을 모두 입력해주세요!😅");
       return;
@@ -61,12 +66,22 @@ const Signup = (props) => {
       return;
     }
 
-    if (values.loginId === values.specificCharacter) {
-      window.alert("특수 문자는 안돼요!😅");
+    if (values.loginId.search(/[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi) !== -1) {
+      window.alert("ID에 특수 문자는 안돼요!😅");
       return;
     }
     setSubmitted(true);
   };
+
+  {/*function checkSpecial(str) {
+    var special_pattern = /[`~!@#$%^&*|\\\'\";:\/?]/gi;
+  
+    if(special_pattern.test(str) == true) {
+      return true;
+    } else {
+      return false;
+    }
+  }*/}
 
   return (
     <div className="Signup">
