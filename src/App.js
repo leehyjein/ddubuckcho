@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import Signup from "./Signup";
-import PostDetail from "./components/PostDetail";
+import Signup from "./pages/Signup";
+import PostDetail from "./pages/PostDetail";
 import PostWrite from "./pages/PostWrite";
 
 export default function App(){
