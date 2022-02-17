@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{ 
+  font-family:'Roboto Mono', monospace;
+}
+.allpage{
+  padding: 10px 30px;
+}
+.writeLoad{
+  background-color: white;
+}
+.mainImage{
+  /* background: url("https://community12345.s3.ap-northeast-2.amazonaws.com/bukchon.jpg") no-repeat center center/cover; */
+  background: url("https://community12345.s3.ap-northeast-2.amazonaws.com/city.jpg") no-repeat center center/cover; 
+  position:absolute;
+  height: 200%;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index:-1;
+  /* padding: 1px; */
+  
+}
+/* .writeImage{
+  background: url("https://community12345.s3.ap-northeast-2.amazonaws.com/city.jpg") no-repeat center center/cover;
+  position:absolute;
+  height: 119%;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index:-1;
+} */
+.Header{
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 20px;
+  border: 1px #42b1ff solid ;
+  background-color: #42b1ff;
+  border-radius: 20px;
+}
+
+.HeaderTitle > h2 {
+  color:white;
+  text-align: center;
+}
+
+.login_HdTitle{
+  color:white;
+  margin-left:11%;
+  
+}
+
+.logout_HdTitle{
+  color:white;
+  margin-left:11%
+}
+.HeaderImage{
+  margin: 3px 0px;
+  width: 50px;
+  height: 50px;
+  border-radius:  50px;
+}
+
+.homeIcon{
+  margin-top:12%;
+  margin-right:5px;
+}
+
+.logoutButton{
+  background-color:white;
+  color: #42b1ff;
+  font-weight: bold;
+  border: none;
+  border-radius:5px;
+  margin-top: 15px;
+}
+
+
+.logoutBar{
+display: flex;
+height:40px;
+margin-right:2%;
+}
+
+.loginHomeIcon{
+  margin-top:6%;
+}
+
+.loginButton{
+  background-color:white;
+  color: #42b1ff;
+  font-weight: bold;
+  border: none;
+  border-radius:5px;
+
+
+  position:relative;
+  bottom:9px;
+  height:24px;
+  left:3px;
+ 
+}
+
+.signupButton{
+  background-color:white;
+  color: #42b1ff;
+  font-weight: bold;
+  border: none;
+  border-radius:5px;
+  margin-left:5px;
+  position:relative;
+  bottom:9px;
+  height:24px;
+  left:3px;
+}
+
+.loginBar{
+  display: flex;
+ 
+}
+
+/*글 작성 페이지*/
+.writeButton{
+  width: 50px;
+  height: 50px;
+  background-color: #212121;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-size: 36px;
+  font-weight: 800;
+  position: fixed;
+  bottom: 50px;
+  right: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+.fileInput{
+  margin-left:25%;
+}
+.writeImageInner{
+  position: relative;
+    /* padding-top: 20%; */
+    overflow: hidden;
+    background-size: cover;
+
+}
+.writeImageOutter{
+  width: 50%;
+    min-width: 200px;
+    margin-left:25%;
+}
+.writeImage{
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+}
+.contents{
+  display: flex;
+  width:10
+}
+.writeContent{
+  position:absolute;
+  top:68%; left:40%;
+  margin-top:1%;
+  height:30px;
+}
+.titlePlaceholder{
+  width:598px;
+  margin-left:-25%;
+}
+.writetrip{
+  height: 200px;
+  width:600px;
+  margin-left:-25%;
+  /* border: white; */
+}
+.writePage{
+   padding: 2% 10%;
+  
+  /* display: flex; */
+   /* align-items: center;
+   justify-content: space-between;  */
+}
+
+.addBtn{
+  background-color:#3545af;
+  color:white;
+  border: none;
+  border-radius: 3px;
+  width:70px;
+  height:30px;
+  margin-top:10%;
+}
+.editBtnContainer{
+margin-top:57%;
+}
+.fixBtn{
+  background-color:#3545af;
+  color:white;
+  border: none;
+  border-radius: 3px;
+  width:60px;
+  height:30px;
+
+}
+
+.deleteBtn{
+  background-color:#3545af;
+  color:white;
+  border: none;
+  border-radius: 3px;
+  width:60px;
+  height:30px;
+  margin-left:2px;
+}
+/*로그인*/
+.loginImage{
+  background: url("https://community12345.s3.ap-northeast-2.amazonaws.com/bukchon.jpg") no-repeat center center/cover;
+  position:absolute;
+  height: 119%;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index:-1;
+  /* padding: 1px; */
+  
+}
+
+ .login{
+  width:100vw;
+  height:100vh;
+} 
+
+
+.login_Title {
+  border: 1px solid #42b1ff;
+  border-radius: 10px;
+  
+  margin:10% 10%;
+  background-color:#42b1ff;
+}
+
+.login_Title > h2 {
+  color:white;
+  text-align:center;
+}
+
+.loginContainer {
+  background-color: #fff;
+  width: 30%;
+  height: 75%;
+  margin: 8% 30% 0% 35%;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.loginIdInput {
+  display: block;
+  width:60%;
+  height:5%;
+  margin:13% auto;
+}
+
+/* .loginIdInput> textarea:focus{
+  border-color:red;
+} */
+
+.loginPasswordInput {
+  display: block;
+  width:60%;
+  height:5%;
+  margin: 50px auto;
+ 
+}
+
+.loginBtn {
+  width: 150px;
+  padding: 5px;
+  margin: 80px auto;
+  
+}
+
+
+/*메인페이지*/
+.mainContainer > h4{
+  text-align: center;
+  /* background-color: #fff; */
+ }
+ 
+ .LikeList{
+   padding:30px;
+   margin-top:0%;
+ }
+.likePostCard {
+  width: 80%;
+}
+
+.postCard {
+  width: 21%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.postImage {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px #999;
+}
+
+.postImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  position: absolute;
+}
+
+.postFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postTitle {
+  width: 40%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+.datePostHeart{
+  margin-left: -40%;
+}
+.writeButton{
+  background-color:#3667f7;
+  
+}
+
+
+/* tablet ----------------------------------------------------- */
+@media screen and (max-width:1179px){
+  .postCard {
+      width: 40%;
+      margin: 30px auto;
+      border-radius: 5px;
+  }
+}
+
+/* mobile ----------------------------------------------------- */
+@media screen and (max-width:539px){
+  .postCard {
+      width: 60%;
+      margin: 20px auto;
+      border-radius: 5px;
+  }
+}
+/* 좋아요 리스트 */
+.iCBEms {
+  background-color:  white;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px #e8e8e8;
+  
+}
+.likePostHeart{
+  margin-left: -40%;
+}
+.listName{
+  margin: 5% 10% 0% 7%; 
+  /* text-align: center; */
+  padding-left: 1%;
+  background-color: white;
+  width: 21%;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 1px #999;
+ }
+/* 시간리스트*/
+.postDateContainer {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 3px 3px 3px 3px #999;
+  background-color:  white;
+}
+.postListTitle >h3{
+  text-align:center;
+}
+.DlistName{
+  margin: 0% 10% 0% 10%; 
+  /* text-align: center; */
+  padding:0% 1% 0% 1%;
+  background-color: white;
+  width: 9%;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px 1px #999;
+}
+/*회원가입*/
+.Signup {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.SignupImage{
+  background: url("https://community12345.s3.ap-northeast-2.amazonaws.com/city.jpg") no-repeat center center/cover;
+  position:absolute;
+  height: 119%;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.Signup_Container {
+  background-color: #fff;
+  width: 100vw;
+  max-width: 410px;
+  margin-top: 8%;
+  margin-left:36%;
+  height: 70vh;
+  padding: 16px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+.Signup_Title {
+  width:85%;
+  height:13%;
+  margin-top: 5%;
+  margin-left: 8%;
+  background-color: #42b1ff;
+  border: #42b1ff;
+  border-radius: 10px;
+}
+
+.Signup_Title > h2 {
+  color: white;
+  text-align: center;
+  position:relative;
+  top:16px;
+}
+
+
+.success-message{
+  text-align:center;
+  color:#ff2667;
+}
+.form-field {
+  margin-top: 8%;
+  margin-bottom: 5%;
+  margin-left: 14%;
+  padding: 1% 15%;
+  text-align:left;
+}
+
+.Signup_btn {
+  width: 50%;
+  margin-left: 39%;
+}
+
+/*디테일 페이지*/
+.container{
+  overflow: scroll;
+  /* position: relative; */
+  /* overflow: hidden; */
+  background-size:cover;
+  /* background: url("https://community12345.s3.ap-northeast-2.amazonaws.com/bukchon.jpg") no-repeat center center/cover;  */
+  position:absolute;
+  height: 90%;
+  width: 100%;
+  top:10%;
+  left:0;
+  z-index:-1;
+}
+
+.postcontainer{
+  margin-top:0%;
+  margin-left:35%;
+
+}
+
+.title_container{
+  width:505px;
+  height: 30px;
+  margin-top:5%;
+  margin-bottom:1%;
+  margin-left:-2px;
+  padding-bottom:1%;
+  background-color:rgb(193, 192, 192);
+  border: 2px solid none;
+  border-radius: 18px;
+}
+
+.title{
+  color:white;
+  text-align:center;
+  margin:auto;
+}
+
+.img{
+  object-fit:cover;
+  width:50%;
+  height: 50%;
+  margin-top:0%;
+}
+
+.description{
+  margin-top:2%;
+  margin-right:50%;
+  border: 2px solid #e4e3e3;
+  border-radius: 2px;
+  background-color: white;
+  
+}
+
+.commentWriteContainer{
+  display: flex;
+  margin-bottom:2%;
+  margin-top:1%;
+}
+
+.comment{
+  border: 1px solid #42b1ff;
+}
+
+.commentBtn{
+background-color:#42b1ff;
+border: none;
+color: white;
+}
+
+.heart{
+  margin-top:1%;
+  margin-left:96%;
+}
+
+.button{
+  margin-top:10%;
+  margin-bottom:1%;
+  margin-left:77%;
+  width: 25%;
+}
+/* 댓글 */
+.commentContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: dashed;
+}
