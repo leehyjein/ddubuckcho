@@ -11,7 +11,7 @@
   * 우재현    
   * 이학진   
   *FE 
-  * ![이가람](https://github.com/devmagrfs?tab=repositories) : 로그인 페이지 CSS와 기능 구현, 댓글 기능 구현
+  * [이가람](https://github.com/devmagrfs?tab=repositories) : 로그인 페이지 CSS와 기능 구현, 댓글 기능 구현
   * 이혜진 : 회원가입 페이지 CSS와 기능 구현
   * 최종현 : 글 작성 페이지 CSS와 기능 구현
  
